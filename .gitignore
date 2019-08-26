@@ -1,0 +1,8 @@
+# system
+.DS_Store
+
+# env
+.env
+
+# npm
+/node_modules/

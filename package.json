@@ -1,0 +1,31 @@
+{
+  "name": "music-api-kr",
+  "version": "1.0.0",
+  "description": "Music API KR",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "i64 <i64dev@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^3.1.0",
+    "axios": "^0.19.0",
+    "body-parser": "^1.19.0",
+    "cheerio": "^1.0.0-rc.3",
+    "cookie-parser": "^1.4.4",
+    "cors": "^2.8.5",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "file-system": "^2.2.2",
+    "http": "0.0.0",
+    "http-errors": "^1.7.3",
+    "moment": "^2.24.0",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.2",
+    "mysql": "^2.17.1",
+    "os": "^0.1.1",
+    "path": "^0.12.7"
+  }
+}
