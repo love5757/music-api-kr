@@ -31,4 +31,12 @@ router.get('/bugs/music/chart/100/exo', function (req, res) {
   API.getBugsTop100Exo(req, res)
 })
 
+router.get('/naver/music/chart/100', function (req, res) {
+  API.getNaverTop100(req, res)
+})
+
+router.get('/naver/music/chart/100/exo', function (req, res) {
+  API.getNaverTop100Exo(req, res)
+})
+
 module.exports = router
