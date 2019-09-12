@@ -2,6 +2,7 @@
 // var connection = mysql_dbc.init()
 const async = require('async')
 const MELON = require('../util/melon/music')
+const GENIE = require('../util/genie/music')
 require('dotenv').config()
 
 const getMelonTop100 = function (req, res) {
@@ -21,3 +22,21 @@ const getMelonTop100Exo = function (req, res) {
 }
 
 module.exports.getMelonTop100Exo = getMelonTop100Exo
+
+const getGenieTop200 = function (req, res) {
+  GENIE.getData()
+    .then(result => {
+      res.json(result)
+    })
+}
+
+module.exports.getGenieTop200 = getGenieTop200
+
+const getGenieTop200Exo = function (req, res) {
+  GENIE.getDataExo()
+    .then(result => {
+      res.json(result)
+    })
+}
+
+module.exports.getGenieTop200Exo = getGenieTop200Exo

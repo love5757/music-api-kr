@@ -15,4 +15,12 @@ router.get('/melon/music/chart/100/exo', function (req, res) {
   API.getMelonTop100Exo(req, res)
 })
 
+router.get('/genie/music/chart/200', function (req, res) {
+  API.getGenieTop200(req, res)
+})
+
+router.get('/genie/music/chart/200/exo', function (req, res) {
+  API.getGenieTop200Exo(req, res)
+})
+
 module.exports = router
