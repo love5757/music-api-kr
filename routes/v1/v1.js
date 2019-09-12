@@ -8,7 +8,11 @@ router.get('/', function (req, res) {
 })
 
 router.get('/melon/music/chart/100', function (req, res) {
-  API.getMusicByArtist(req, res)
+  API.getMelonTop100(req, res)
+})
+
+router.get('/melon/music/chart/100/exo', function (req, res) {
+  API.getMelonTop100Exo(req, res)
 })
 
 module.exports = router
