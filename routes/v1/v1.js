@@ -23,4 +23,12 @@ router.get('/genie/music/chart/200/exo', function (req, res) {
   API.getGenieTop200Exo(req, res)
 })
 
+router.get('/bugs/music/chart/100', function (req, res) {
+  API.getBugsTop100(req, res)
+})
+
+router.get('/bugs/music/chart/100/exo', function (req, res) {
+  API.getBugsTop100Exo(req, res)
+})
+
 module.exports = router

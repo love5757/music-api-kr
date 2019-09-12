@@ -3,6 +3,7 @@
 const async = require('async')
 const MELON = require('../util/melon/music')
 const GENIE = require('../util/genie/music')
+const BUGS = require('../util/bugs/music')
 require('dotenv').config()
 
 const getMelonTop100 = function (req, res) {
@@ -40,3 +41,21 @@ const getGenieTop200Exo = function (req, res) {
 }
 
 module.exports.getGenieTop200Exo = getGenieTop200Exo
+
+const getBugsTop100 = function (req, res) {
+  BUGS.getData()
+    .then(result => {
+      res.json(result)
+    })
+}
+
+module.exports.getBugsTop100 = getBugsTop100
+
+const getBugsTop100Exo = function (req, res) {
+  BUGS.getDataExo()
+    .then(result => {
+      res.json(result)
+    })
+}
+
+module.exports.getBugsTop100Exo = getBugsTop100Exo
