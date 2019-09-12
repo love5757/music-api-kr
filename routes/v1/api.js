@@ -62,7 +62,7 @@ const getBugsTop100Exo = function (req, res) {
 module.exports.getBugsTop100Exo = getBugsTop100Exo
 
 const getNaverTop100 = function (req, res) {
-  BUGS.getData()
+  NAVER.getData()
     .then(result => {
       res.json(result)
     })
@@ -71,7 +71,7 @@ const getNaverTop100 = function (req, res) {
 module.exports.getNaverTop100 = getNaverTop100
 
 const getNaverTop100Exo = function (req, res) {
-  BUGS.getDataExo()
+  NAVER.getDataExo()
     .then(result => {
       res.json(result)
     })
